@@ -9,7 +9,7 @@ const {
 } = process.env;
 
 const app = express();
-const DIST_DIR = path.join(__dirname, '../dist'); // NEW
+const DIST_DIR = path.join(__dirname, '../dist');
 
 app.use(express.static('public'));
 app.use('/', express.static(DIST_DIR));
