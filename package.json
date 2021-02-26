@@ -4,8 +4,14 @@
   "main": "index.js",
   "license": "",
   "scripts": {
+    "start": "nodemon server/index.js",
     "build": "webpack --mode production",
-    "dev": "webpack-dev-server --mode development"
+    "dev": "webpack-dev-server --mode development",
+    "lint": "eslint . --ext .json --ext .js",
+    "lint:fix": "eslint --fix . --ext .json --ext .js",
+    "format": "prettier --write \"**/*.+(js|json|yml|yaml|css)\"",
+    "test": "",
+    "eject": ""
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
@@ -25,7 +31,7 @@
     "eslint-config-airbnb-base": "^14.2.1",
     "eslint-config-prettier": "^6.9.0",
     "eslint-loader": "^3.0.3",
-    "eslint-plugin-import": "^2.20.0",
+    "eslint-plugin-import": "^2.22.1",
     "eslint-plugin-jsx-a11y": "^6.2.3",
     "eslint-plugin-prettier": "^3.1.2",
     "eslint-plugin-react": "^7.17.0",
