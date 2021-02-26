@@ -5,13 +5,13 @@ module.exports = {
     extensions: ['.tsx', '.ts', '.js'],
   },
   devServer: {
-    contentBase: path.join(__dirname, 'client/public'),
+    contentBase: path.join(__dirname, 'public'),
     compress: true,
     port: 3000,
   },
-  entry: path.resolve(__dirname, 'client/src', 'index.tsx'),
+  entry: path.resolve(__dirname, 'src', 'index.tsx'),
   output: {
-    path: path.resolve(__dirname, 'client/public'),
+    path: path.resolve(__dirname, 'public'),
     filename: 'bundle.js',
   },
   module: {
@@ -41,7 +41,7 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif)$/i,
         use: ['file-loader'],
-        include: path.join(__dirname, 'client/src/assets/')
+        include: path.join(__dirname, 'src/assets/')
       },
       {
         enforce: 'pre',
