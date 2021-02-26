@@ -1,7 +1,7 @@
 import React from 'react';
 // import logo from '../assets/logo.png';
 import logo from '../assets/images/logo.png';
-import '../styles.scss';
+import '../index.scss';
 
 export default function src() {
   return (
