@@ -31,8 +31,17 @@ module.exports = {
         use: [{ loader: 'style-loader' }, { loader: 'css-loader' }],
       },
       {
+        test: /\.scss$/,
+        use: [
+          { loader: "style-loader" },
+          { loader: "css-loader" },
+          { loader: "sass-loader" }
+        ]
+      },
+      {
         test: /\.(png|svg|jpg|gif)$/i,
         use: ['file-loader'],
+        include: path.join(__dirname, 'src/assets/')
       },
       {
         enforce: 'pre',

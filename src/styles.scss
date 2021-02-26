@@ -1,7 +1,8 @@
+$var1: #60b6ee;
 html,
 body {
   height: 100vh;
-  background-color: #60b6ef;
+  background-color: $var1;
   color: #fff;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 
@@ -14,6 +15,7 @@ body {
   text-align: center;
   width: 100%;
   display: block;
+  background-image: url('assets/logo.png');
 }
 .container > img {
   border-radius: 50%;
