@@ -1,6 +1,6 @@
 import React from 'react';
 // import logo from '../assets/logo.png';
-import logo from '../assets/logo.png';
+import logo from '../assets/images/logo.png';
 import '../styles.scss';
 
 export default function src() {
